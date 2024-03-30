@@ -1,0 +1,19 @@
+@mixin text-colors{
+    // setting the text colors 
+    @each $color , $value in $colors{
+        .text-#{$color}{
+            color: $value;
+        }
+        .hover-text{
+            &-#{$color}{
+                transition:  $hover-text-tming linear , background-color $hover-background-timing linear;
+                &:hover{
+                    color: $value;
+
+                }
+
+            }
+        }
+
+    }
+}

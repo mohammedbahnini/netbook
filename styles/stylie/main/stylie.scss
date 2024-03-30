@@ -1,0 +1,27 @@
+// main and neccessary files
+@import '../base/vars';
+@import '../mixins/breakpoints';
+@import '../base/reset';
+
+// the basic components
+@import '../components/buttons';
+
+
+// layouts ( flex , grid )
+@import '../utilities/layout/layout';
+
+// paddings , margins , widths  
+@import '../utilities/spacing/spacing';
+
+// box-shadow , border-radius 
+@import '../utilities/shaping/index';
+
+// font sizes , font families , text colors
+@import '../utilities/typo/typo'; 
+
+// background colors
+@import '../utilities/coloring/coloring';
+
+@import '../breakpoints/tablet-breakpoint';
+@import '../breakpoints/mobile-breakpoint';
+

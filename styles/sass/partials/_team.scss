@@ -1,0 +1,14 @@
+.team{
+
+    .btn.active{
+        background-color: $light-blue;
+        box-shadow: 0 7px 22px -6px rgba(0, 72, 168, 0.34);
+    }
+
+    .profile{
+        border: 1px solid rgba(243, 243, 243, 0.5);
+        &:hover{
+            box-shadow: 0 34px 68px 0 rgba(116, 115, 128, 0.1);
+        }
+    }
+}

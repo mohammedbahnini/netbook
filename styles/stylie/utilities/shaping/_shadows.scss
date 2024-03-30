@@ -1,0 +1,7 @@
+@mixin shadows{
+    @for $i from 1 through 4 {
+        .shadow-#{$i}{
+            box-shadow: 0 5px #{ $i * 10px}  0 rgba(0  , 0, 0 , .2);
+        }
+    }
+}

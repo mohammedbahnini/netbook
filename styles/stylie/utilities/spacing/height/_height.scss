@@ -1,0 +1,39 @@
+// setting heights 
+@mixin height($bp:''){
+
+    // height height rem
+    @for $i from 0 through 200{
+        .#{$bp}h#{$i}{
+            height: $i * $width-base / 4;;
+        }
+    }
+
+
+    // height with %
+    @for $i from 0 through 100{
+        .#{$bp}h#{$i}pr{
+            height: $i * 1%;
+        }
+    }
+
+     // height with vw
+     @for $i from 0 through 100{
+        .#{$bp}h#{$i}vw{
+            height: $i * 1vw;
+        }
+    }
+
+     // height with vh
+     @for $i from 0 through 100{
+        .#{$bp}h#{$i}vh{
+            height: $i * 1vh;
+        }
+    }
+    
+    // height auto
+    .#{$bp}h-auto{
+        height: auto ;
+    }
+
+
+}

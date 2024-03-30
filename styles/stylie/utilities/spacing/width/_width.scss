@@ -1,0 +1,41 @@
+// setting widths 
+@mixin width($bp:''){
+
+    // widths with rem
+    @for $i from 0 through 200{
+        .#{$bp}w#{$i}{
+            width: $i * $width-base / 4;;
+        }
+    }
+
+
+    // widths with %
+    @for $i from 0 through 100{
+        .#{$bp}w#{$i}pr{
+            width: $i * 1%;
+        }
+    }
+
+    // widths with vw
+    @for $i from 0 through 100{
+        .#{$bp}w#{$i}vw{
+            width: $i * 1vw;
+        }
+    }
+
+    // widths with vh
+    @for $i from 0 through 100{
+        .#{$bp}w#{$i}vh{
+            width: $i * 1vh;
+        }
+    }
+
+
+     // widths auto
+     .#{$bp}w-auto{
+        width: auto ;
+    }
+    
+
+
+}

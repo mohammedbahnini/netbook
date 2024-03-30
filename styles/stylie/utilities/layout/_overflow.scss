@@ -1,0 +1,32 @@
+@mixin overflow( $bp : ''){
+    .#{$bp}overflow-hidden{
+        overflow: hidden;
+    }
+    .#{$bp}overflow-visible{
+        overflow: visible;
+    }
+    .#{$bp}overflow-scroll{
+        overflow: scroll;
+    }
+
+    // directions (x,y)
+    .#{$bp}overflow-x-hidden{
+        overflow-x: hidden;
+    }
+    .#{$bp}overflow-x-visible{
+        overflow-x: visible;
+    }
+    .#{$bp}overflow-x-scroll{
+        overflow-x : scroll;
+    }
+
+    .#{$bp}overflow-y-hidden{
+        overflow-y: hidden;
+    }
+    .#{$bp}overflow-y-visible{
+        overflow-y: visible;
+    }
+    .#{$bp}overflow-x-scroll{
+        overflow-y : scroll;
+    }
+}

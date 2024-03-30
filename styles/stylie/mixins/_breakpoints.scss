@@ -1,0 +1,12 @@
+// set mixins for devices 
+@mixin mq($bp){
+    @media (max-width : map-get($breakpoint-sizes , $bp)){
+        @content ;
+    }
+}
+
+@mixin custom-breakpoint($bp){
+    @media (max-width : #{$bp} ){
+        @content ;
+    }
+}

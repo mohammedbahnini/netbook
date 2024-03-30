@@ -1,0 +1,35 @@
+// include all the specific styles for mobile target 
+@include mq( $mobile-breakpoint){
+    // background-colors
+    //@include bg($mobile-breakpoint-class-prefix);
+
+    // // layouts 
+    @include flex-childs($mobile-breakpoint-class-prefix);
+    @include displays($mobile-breakpoint-class-prefix);
+    @include grid($mobile-breakpoint-class-prefix);
+    @include flex($mobile-breakpoint-class-prefix);
+    @include positioning($mobile-breakpoint-class-prefix);
+    @include overflow($mobile-breakpoint-class-prefix);
+    @include z-index($mobile-breakpoint-class-prefix);
+
+    // // spacing ( width , min-width , max-width , height , min-height , max-height )
+    @include padding($mobile-breakpoint-class-prefix);
+    @include margin($mobile-breakpoint-class-prefix);
+    @include width($mobile-breakpoint-class-prefix);
+    @include max-width($mobile-breakpoint-class-prefix);
+    @include min-width($mobile-breakpoint-class-prefix);
+    @include height($mobile-breakpoint-class-prefix);
+    @include min-height($mobile-breakpoint-class-prefix);
+    @include max-height($mobile-breakpoint-class-prefix);
+
+    // // box-shadow , border-radius
+    // // @include shadows;
+    // // @include shapes;
+
+    // // typo (font families , font sizes , text-colors , text-align , childs text-align )
+    // // @include font-families;
+    @include font-sizes($mobile-breakpoint-class-prefix);
+    // @include text-colors;
+    @include text-align($mobile-breakpoint-class-prefix);
+    @include text-align-childs($mobile-breakpoint-class-prefix);
+}

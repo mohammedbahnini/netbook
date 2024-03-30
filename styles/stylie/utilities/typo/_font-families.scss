@@ -1,0 +1,8 @@
+@mixin font-families{
+    // set font families
+    @each $prefix , $value in $font-families{
+        .ff#{$prefix}{
+            font-family: $value ;
+        }
+    }
+}

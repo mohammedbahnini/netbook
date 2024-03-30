@@ -1,0 +1,18 @@
+
+.btn{
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: .75rem;
+    line-height: 1.166em;
+    padding: 1.125rem 3rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    cursor: pointer;
+    vertical-align: text-bottom;
+    font-weight: 700;
+    color: $white;
+    transition: background-color .2s linear , color .2s linear;
+    text-align: center;
+
+}

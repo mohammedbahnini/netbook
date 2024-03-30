@@ -1,0 +1,21 @@
+// setting heights 
+@mixin min-height($bp:''){
+
+    // height height rem
+    @for $i from 0 through 200{
+        .#{$bp}min-h#{$i}{
+            min-height: $i * $width-base / 4;;
+        }
+    }
+
+
+    // height with %
+    @for $i from 0 through 100{
+        .#{$bp}min-h#{$i}pr{
+            min-height: $i * 1%;
+        }
+    }
+    
+
+
+}

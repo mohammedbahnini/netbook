@@ -1,0 +1,209 @@
+// main colors 
+$blue : #345FF6 ;
+$green : #42b883;
+$purple: #5959B3;
+$pink: #F39E9E;
+$orange: #FE753E;
+$gray: #e7eaf6;
+$red: #dc2f2f;
+$yellow: #f8da5b;
+$black: black;
+$white: #FFFFFF ;
+$transparent: transparent;
+
+
+
+// put custom colors here
+$grayish-gray: #656464;
+$pale-gray: #A1A1A6;
+
+$pale-blue: #E7F1FE;
+$light-blue: #217BF4;
+$dark-blue: #0A093D;
+$grayish-blue: #2B2B39;
+$very-grayish-blue: #20202D;
+
+$light-orange: #FFC362;
+
+
+
+
+
+
+
+// map of colors 
+$colors : (
+    'blue' : $blue , 
+    'green' : $green , 
+    'purple' :  $purple , 
+    'pink' : $pink,
+    'orange' : $orange ,
+    'gray' : $gray,
+    'red' : $red ,
+    'yellow' : $yellow , 
+    'white' : $white , 
+    'black' : $black ,
+    'transparent' : $transparent ,     
+    // custom colors
+    'grayish-gray' : $grayish-gray  , 
+    'pale-gray' : $pale-gray , 
+    'pale-blue': $pale-blue , 
+    'light-blue' : $light-blue ,
+    'dark-blue' : $dark-blue , 
+    'grayish-blue' : $grayish-blue ,
+    'very-grayish-blue' : $very-grayish-blue , 
+    'light-orange' : $light-orange , 
+
+);
+
+
+// spacing variables
+$padding-base : 1rem;
+$margin-base: 1rem;
+$width-base : 1rem;
+
+// padding prefixes
+$padding-prefixes : (
+    'p'  : (padding )  , 
+    'px' : (padding-left , padding-right) , 
+    'py' : (padding-top , padding-bottom) , 
+    'pl' : (padding-left) , 
+    'pr' : (padding-right) , 
+    'pt' : (padding-top ) , 
+    'pb' : (padding-bottom )
+);
+
+// marign prefixes
+$margin-prefixes : (
+    'm'  : ( margin )   , 
+    'mx' : (margin-left , margin-right) , 
+    'my' : (margin-top , margin-bottom) , 
+    'ml' : (margin-left) , 
+    'mr' : (margin-right) , 
+    'mt' : (margin-top ) , 
+    'mb' : (margin-bottom )
+);
+
+// typo variables
+$font-size-base : 1rem;
+
+$font-sizes: (
+    'sm' : 0.5 * $font-size-base , 
+    'md' : 1 * $font-size-base , 
+    'lg' : 1.5 * $font-size-base ,
+    'xlg' : 2 * $font-size-base , 
+    '2xlg' : 2.5 * $font-size-base , 
+    '3xlg' : 3 * $font-size-base
+);
+
+
+$font-familly-base :  "Mulish", sans-serif; // default font family is ( "Poppins", sans-serif )
+$font-families : (
+    '1' : $font-familly-base  , 
+    '2' : ("Inter", sans-serif)
+);
+
+$text-align-prefix: 'align';
+$text-aligns: (
+    'left' : left , 
+    'right' : right , 
+    'center' : center , 
+    'justify' : justify 
+);
+
+
+
+// layout variables
+$container-padding : 2.5rem;
+$gap-base : 1rem;
+$border-radius-base: 1rem;
+$columns-count : 12;
+
+$displays : (
+    'block' : block , 
+    'flex' : flex  , 
+    'inline-block' : inline-block , 
+    'inline' : inline , 
+    'hide' : none , 
+    'grid' : grid 
+); 
+
+$flex-justify : (
+    'jc' : (
+        'space-between' :  space-between , 
+        'start' : start , 
+        'end' :  end , 
+        'space-around' : space-around , 
+        'center' : center  , 
+        'space-evenly' : space-evenly 
+    )
+);
+
+
+
+$flex-align-items : (
+    'ai' : (
+        'start' : start , 
+        'end' : end , 
+        'center' : center , 
+        'baseline' : baseline 
+    )
+);
+
+$align-self : (
+    'as' : (
+        'start' : start , 
+        'end' : end, 
+        'baseline' : baseline , 
+        'center' : center
+    )
+);
+
+$flex-directions : (
+    'flex' : (
+        'row' : row , 
+        'row-reverse' : row-reverse , 
+        'reverse' : reverse , 
+        'col' : column, 
+        'col-reverse' : column-reverse 
+    )
+);
+
+// breakpoints 
+$large-breakpoint: 'large';
+$tablet-breakpoint: 'tablet';
+$mobile-breakpoint: 'mobile';
+
+$large-breakpoint-class-prefix : 'lg-';
+$tablet-breakpoint-class-prefix: 'md-';
+$mobile-breakpoint-class-prefix: 'sm-';
+
+
+$breakpoints : (
+    $large-breakpoint : $large-breakpoint-class-prefix , 
+    $tablet-breakpoint : $tablet-breakpoint-class-prefix , 
+    $mobile-breakpoint : $mobile-breakpoint-class-prefix  
+);
+
+$breakpoint-sizes : (
+    $large-breakpoint : 1200px ,
+    $tablet-breakpoint : 992px , 
+    $mobile-breakpoint : 576px 
+);
+
+// timing for hover (text , background-color )
+$hover-text-tming: .1s;
+$hover-background-timing : .1s;
+
+// postions 
+$positions: (
+    'relative' : relative , 
+    'absolute' : absolute , 
+    'fixed' : fixed ,
+    'sticky' : sticky , 
+    'static' : static
+);
+
+
+
+

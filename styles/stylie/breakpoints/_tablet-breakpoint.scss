@@ -1,0 +1,35 @@
+// include all the specific styles for tablet target 
+@include mq( $tablet-breakpoint){
+    // background-colors
+    //@include bg($tablet-breakpoint-class-prefix);
+
+    // layouts 
+    @include flex-childs($tablet-breakpoint-class-prefix);
+    @include displays($tablet-breakpoint-class-prefix);
+    @include grid($tablet-breakpoint-class-prefix);
+    @include flex($tablet-breakpoint-class-prefix);
+    @include positioning($tablet-breakpoint-class-prefix);
+    @include overflow($tablet-breakpoint-class-prefix);
+    @include z-index($tablet-breakpoint-class-prefix);
+
+    // spacing ( width , min-width , max-width , height , min-height , max-height )
+    @include padding($tablet-breakpoint-class-prefix);
+    @include margin($tablet-breakpoint-class-prefix);
+    @include width($tablet-breakpoint-class-prefix);
+    @include max-width($tablet-breakpoint-class-prefix);
+    @include min-width($tablet-breakpoint-class-prefix);
+    @include height($tablet-breakpoint-class-prefix);
+    @include min-height($tablet-breakpoint-class-prefix);
+    @include max-height($tablet-breakpoint-class-prefix);
+
+    // box-shadow , border-radius
+    // @include shadows;
+    // @include shapes;
+
+    // typo (font families , font sizes , text-colors , text-align , childs text-align )
+    // @include font-families;
+    @include font-sizes($tablet-breakpoint-class-prefix);
+    // @include text-colors;
+    @include text-align($tablet-breakpoint-class-prefix);
+    @include text-align-childs($tablet-breakpoint-class-prefix);
+}

@@ -1,0 +1,17 @@
+@mixin shapes{
+    // set border radius 
+    @for $i from 0 through 100{
+        .radius#{$i}{
+            border-radius: #{ $border-radius-base / 4 * $i };
+        }
+        .rounded{
+            border-radius: 50%;
+            aspect-ratio: 1 / 1 ;
+        }
+    }
+
+    // object fit cover for images
+    .object-fit-cover{
+        object-fit: cover;
+    }
+}

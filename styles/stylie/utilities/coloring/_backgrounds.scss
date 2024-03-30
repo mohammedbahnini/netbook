@@ -1,0 +1,42 @@
+// setting background color 
+@mixin bg( $bp : ''){
+
+    @each $color , $value in $colors {
+        // set background-color:  for all childs
+        .#{$bp}childs-bg-#{$color} > *{
+            background-color: $value;
+        }
+
+        // hover effect
+        .#{$bp}childs-hover-bg-#{$color} >* {
+            transition:  $hover-text-tming linear , 
+            background-color $hover-background-timing linear;
+            &:hover {
+                background-color: $value;
+            }
+        }
+
+
+
+
+
+        // set background-color
+        .#{$bp}bg-#{$color}{
+            background-color: $value;
+        }
+       
+        // hover effect
+        .#{$bp}hover-bg-#{$color}{
+            transition:  $hover-text-tming linear , 
+            background-color $hover-background-timing linear;
+            &:hover{
+                background-color: $value;
+            }
+        }
+
+      
+
+    }
+}
+
+

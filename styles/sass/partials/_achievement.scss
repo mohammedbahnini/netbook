@@ -1,0 +1,21 @@
+.achievement{
+    .avatars{
+        .avatar{
+            margin-right: -6px;
+            box-shadow: -5px 4px 14px 0 rgba(151, 151, 151, 0.28);
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .card{
+        &:hover{
+            box-shadow: 0 26px 49px 0 rgba(146, 165, 184, 0.14) ;
+        }
+    }
+
+    .btn--discover{
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) , 0 10px 22px -6px rgba(33, 123, 244, 0.26);
+    }
+}

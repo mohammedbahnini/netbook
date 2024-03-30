@@ -1,0 +1,20 @@
+@mixin outline{
+    @each $key , $val in $colors{
+        .outline-#{$key}{
+            outline-color: $val;
+        }
+    }
+
+    @for $i from 0 through 10{
+        .outline#{$i}{
+            outline-style: solid;
+            outline-width: #{ $i * 1px};
+        }
+        
+    }
+    @for $i from -10 through 10{
+        .outline-offset#{$i}{
+            outline-offset: #{ $i * 1px};
+        }
+    }
+}

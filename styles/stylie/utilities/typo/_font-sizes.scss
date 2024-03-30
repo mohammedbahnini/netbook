@@ -1,0 +1,34 @@
+@mixin font-sizes($bp : ''){
+    // set font sizes
+    @each $prefix , $value in $font-sizes{
+        .#{$bp}fs#{$prefix}{
+            font-size: $value ;
+        }
+    }
+
+    // set specific font sizes
+    @for $i from 1 through 100{
+        .#{$bp}fs#{ $i }{
+            font-size: $font-size-base / 4 * $i ;
+        }
+    }
+
+    // font weights
+    @for $i from 1 through 9 {
+        .#{$bp}fw#{ $i * 100}{
+            font-weight: $i *100;
+        }
+    }
+
+    // text transform
+    .#{$bp}uppercase{
+        text-transform: uppercase;
+    }
+    .#{$bp}lowercase{
+        text-transform: lowercase;
+    }
+    .#{bp}capitalize{
+        text-transform: capitalize;
+    }
+
+}

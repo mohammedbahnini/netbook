@@ -1,0 +1,21 @@
+// setting heights 
+@mixin max-height($bp:''){
+
+    // height height rem
+    @for $i from 0 through 200{
+        .#{$bp}max-h#{$i}{
+            max-height: $i * $width-base / 4;;
+        }
+    }
+
+
+    // height with %
+    @for $i from 0 through 100{
+        .#{$bp}max-h#{$i}pr{
+            max-height: $i * 1%;
+        }
+    }
+    
+
+
+}

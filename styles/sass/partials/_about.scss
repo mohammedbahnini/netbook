@@ -1,0 +1,28 @@
+.about{
+     ul li{
+        position: relative;
+        &::after , &::before{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 18px;
+            aspect-ratio: 1 / 1;
+            background-color: $pale-blue;
+            border-radius: 50%;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 8px;
+            aspect-ratio: 1 / 1;
+            background-color: $light-blue;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+     }
+}

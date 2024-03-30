@@ -1,0 +1,42 @@
+// setting widths 
+@mixin max-width($bp:''){
+
+
+    // max widths with rem
+    @for $i from 0 through 200{
+        .#{$bp}max-w#{$i}{
+            max-width: $i * $width-base / 4;;
+        }
+    }
+
+
+    // max width ( % )
+    @for $i from 0 through 100 {
+
+        .#{$bp}max-w#{$i}pr{
+            max-width: $i * 1%;
+        }
+
+    }
+
+    // // max width ( vw)
+    // @for $i from 0 through 100 {
+
+    //     .#{$bp}max-w#{$i}vw{
+    //         width: $i * 1vw;
+    //     }
+
+    // }
+
+    // // max width ( vh)
+    // @for $i from 0 through 100 {
+
+    //     .#{$bp}max-w#{$i}vw{
+    //         width: $i * 1vw;
+    //     }
+
+    // }
+
+
+
+}

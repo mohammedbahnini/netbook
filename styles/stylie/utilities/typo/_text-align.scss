@@ -1,0 +1,11 @@
+// set text aligns
+@mixin text-align( $bp : '' ){
+
+    
+    // text align ( left , right , center , justify )
+    @each $key , $val in $text-aligns{
+        .#{ $bp }#{$text-align-prefix}-#{$key}{
+            text-align: $val;
+        }
+    }
+}

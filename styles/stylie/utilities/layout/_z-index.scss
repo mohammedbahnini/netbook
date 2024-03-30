@@ -1,0 +1,8 @@
+@mixin z-index( $bp : '' ){
+    @for $i from -99 through 99{
+        .#{$bp}z#{$i}{
+            z-index: $i;
+        }
+    }
+    
+}

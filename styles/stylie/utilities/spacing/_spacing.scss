@@ -1,0 +1,23 @@
+@import 'paddings';
+@import 'margings';
+@import 'width/width';
+@import 'width/max-width';
+@import 'width/min-width';
+@import 'height/height';
+@import 'height/min-height';
+@import 'height/max-heihgt';
+
+
+
+
+
+@include padding;
+@include margin;
+@include width;
+@include max-width;
+@include min-width;
+@include height;
+@include min-height;
+@include max-height;
+
+

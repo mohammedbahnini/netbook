@@ -1,0 +1,60 @@
+@mixin positioning( $bp : '' ){
+    
+    // type of positoins (relative , absolute , fixed , sticky , static )
+    @each $key , $val in $positions {
+        .#{ $bp }#{ $key }{
+            position: $val ;
+        }
+    }
+
+    // positioning cordinates with %
+    @for $i from  0 through 100 {
+        .#{$bp}top#{$i}pr{
+            top : $i * 1%;
+        }
+        .#{$bp}bottom#{$i}pr{
+            bottom : $i * 1%;
+        }
+        .#{$bp}left#{$i}pr{
+            left : $i * 1%;
+        }
+        .#{$bp}right#{$i}pr{
+            right : $i * 1%;
+        }
+
+    }
+
+
+
+    // positioning cordinates with rem
+    @for $i from -150 through 150 {
+        .#{$bp}top#{$i}{
+            top : 0.25rem * $i;
+        }
+        .#{$bp}bottom#{$i}{
+            bottom : 0.25rem * $i;
+        }
+        .#{$bp}left#{$i}{
+            left : 0.25rem * $i;
+        }
+        .#{$bp}right#{$i}{
+            right : 0.25rem * $i;
+        }
+
+    }
+
+    // unset ( top , left , right , bottom )
+    .#{ $bp }top-unset{
+        top: unset;
+    }
+    .#{ $bp }left-unset{
+        left: unset;
+    }
+    .#{ $bp }right-unset{
+        top: unset;
+    }
+    .#{ $bp }bottom-unset{
+        bottom: unset;
+    }
+    
+}

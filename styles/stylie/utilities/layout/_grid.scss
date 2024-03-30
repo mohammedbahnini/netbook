@@ -1,0 +1,25 @@
+@mixin grid($prefix:''){
+
+    // set display to grid + define how many columns the grid will contain
+    .#{$prefix}grid{
+        display: grid;
+        grid-template-columns: repeat( #{$columns-count} , 1fr);
+    }
+    
+    // set the columns from 1 to 12
+    @for $i from 1 through $columns-count {
+        .#{$prefix}col#{$i} {
+            grid-column: span #{$i};
+        }
+    }
+
+
+    // set the row span from 1 to 12
+    @for $i from 1 through 12 {
+        .#{$prefix}row#{$i} {
+            grid-row: span #{$i};
+        }
+    }
+}
+
+@include grid;

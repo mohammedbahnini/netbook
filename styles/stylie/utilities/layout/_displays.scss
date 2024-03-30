@@ -1,0 +1,11 @@
+@mixin displays( $bp : ''){
+    .#{$bp}hide{
+        display: none ;
+        // visibility: hidden ;
+    }
+    .#{$bp}childs-hide > * {
+        display: none ;
+        // visibility: hidden ;
+    }
+
+}

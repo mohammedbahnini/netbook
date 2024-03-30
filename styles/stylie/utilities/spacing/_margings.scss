@@ -1,0 +1,23 @@
+
+// setting margin classes
+@mixin margin($bp:''){
+
+    .#{$bp}m-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @for $i from -150 through 150 {
+
+        @each $prefix , $map in $margin-prefixes{
+            .#{$bp}#{$prefix}#{$i}{
+                @each $property in $map {
+                    #{$property} : $i * $padding-base / 4;
+                }
+            }
+        }
+
+    }   
+
+}
+

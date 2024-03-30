@@ -1,0 +1,24 @@
+// setting widths 
+@mixin min-width($bp:''){
+
+
+    // max widths with rem
+    @for $i from 0 through 200{
+        .#{$bp}min-w#{$i}{
+            min-width: $i * $width-base / 4;;
+        }
+    }
+
+
+    // max width ( % )
+    @for $i from 0 through 100 {
+
+        .#{$bp}min-w#{$i}pr{
+            max-width: $i * 1%;
+        }
+
+    }
+
+
+
+}

@@ -1,0 +1,84 @@
+@mixin flex-childs($bp:''){
+    // set display 
+    @each $key , $val in $displays{
+        .#{$bp}childs-#{$key}  > *{
+            display: $val;
+        }
+    }
+
+    // flex  ( grow-, shrink , basis )
+    @for $i from 0 through 12 {
+        .#{$bp}childs-flex#{ $i }{
+            flex: #{ $i };
+        }
+    }
+
+    // flex grow
+    @for $i from 0 through 100 {
+        .#{$bp}childs-grow-#{ $i } > * {
+            flex-grow: #{ $i };
+        }
+    }
+
+    // flex shrink
+    @for $i from 0 through 1 {
+        .#{$bp}childs-shrink-#{ $i } > * {
+            flex-shrink: #{ $i };
+        }
+    }
+
+
+    // justiy contet for flex 
+    @each $prefix , $map in $flex-justify {
+        @each $name , $value in $map {
+            .#{$bp}childs-#{$prefix}-#{$name}  > * {
+                justify-content: $value ;
+            }
+        }
+    }
+
+    // align items for flex
+    @each $prefix , $map in $flex-align-items {
+        @each $name , $value in $map {
+            .#{$bp}childs-#{$prefix}-#{$name}  > * {
+                align-items : $value ;
+            }
+        }
+    }
+
+
+    // align self for flex
+    @each $prefix , $map in $align-self {
+        @each $name , $value in $map {
+            .#{$bp}childs-#{$prefix}-#{$name} > *  {
+                align-self : $value ;
+            }
+        }
+    }
+
+
+
+    // flex directions
+    @each $prefix , $map in $flex-directions {
+        @each $name , $value in $map {
+            .#{$bp}childs-#{$prefix}-#{$name}  > * {
+                flex-direction : $value ;
+            }
+        }
+    }
+
+
+    // setting gap 
+    @for $i from 0 through 80 {
+        .#{$bp}childs-gap-#{ $i} > * {
+            gap : #{ $gap-base / 4 * $i};
+        }
+        .#{$bp}childs-col-gap-#{ $i} > * {
+            column-gap : #{ $gap-base / 4 * $i};
+        }
+        .#{$bp}childs-row-gap-#{ $i} > * {
+            row-gap : #{ $gap-base / 4 * $i};
+        }
+    }
+}
+
